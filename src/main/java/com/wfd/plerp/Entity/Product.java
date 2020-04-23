@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * @author DELL
+ * @author Ashok
  *
  */
 @Entity

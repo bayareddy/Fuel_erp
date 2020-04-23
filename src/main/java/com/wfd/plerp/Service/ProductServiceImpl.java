@@ -10,7 +10,7 @@ import com.wfd.plerp.Entity.Product;
 import com.wfd.plerp.Repositiory.ProductRepositiory;
 
 /**
- * @author DELL
+ * @author Ashok
  *
  */
 @Service

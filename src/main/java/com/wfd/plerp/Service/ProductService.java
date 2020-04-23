@@ -6,7 +6,7 @@ package com.wfd.plerp.Service;
 import com.wfd.plerp.Entity.Product;
 
 /**
- * @author DELL
+ * @author Ashok
  *
  */
 public interface ProductService {
