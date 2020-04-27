@@ -14,19 +14,13 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="Role")
-public class Role {
-	@Id
-	private Integer roleId;
+public class Role extends BaseEntity {
+	
 	@Column
 	private String roleName;
 	@Column
 	private String description;
-	public Integer getRoleId() {
-		return roleId;
-	}
-	public void setRoleId(Integer roleId) {
-		this.roleId = roleId;
-	}
+	
 	public String getRoleName() {
 		return roleName;
 	}

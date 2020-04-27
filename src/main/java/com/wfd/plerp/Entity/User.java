@@ -14,19 +14,13 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="User")
-public class User {
-	@Id
-	private Integer userId;
+public class User extends BaseEntity {
+
 	@Column
 	private String userName;
 	@Column
 	private String password;
-	public Integer getUserId() {
-		return userId;
-	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
+	
 	public String getUserName() {
 		return userName;
 	}

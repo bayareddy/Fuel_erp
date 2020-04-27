@@ -3,9 +3,12 @@
  */
 package com.wfd.plerp.Entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -14,25 +17,15 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="product")
-public class Product {
-	@Id
-	private Integer id;
+public class Product  extends BaseEntity{
+	
+	@ManyToOne(cascade=CascadeType.ALL , fetch=FetchType.EAGER)
+	ProductType productType;
+	
 	@Column
 	private String name;
 	@Column
 	private String description;
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
-	}
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
-	}
 	/**
 	 * @return the name
 	 */
